@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Market Point</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- theme color for android 5.0 -->
+    <meta name="theme-color" content="#17b2e6">
+    <!-- <meta name="viewport" content="width=1200"> -->
+    <!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+    <link rel="stylesheet" media="all" href="css/screen.css">
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body class="main-page">
+
+    <div class="wrapper">
+
+        <header class="header">
+
+            <div class="header-top">
+                <div class="container">
+                    <div class="address">
+                        <div class="address__str">127322, г. Москва, Огородный проезд, д.20, стр.27</div>
+                        <a class="address__mail" href="mailto:system@original-group.ru"><svg class="address__icon icon icon-mail">
+                          <use xlink:href="img/sprite.svg#icon-mail"></use>
+                       </svg>system@original-group.ru</a>
+                    </div>
+                    <div class="call">
+                        <a class="call__tel" href="tel:8 (800) 555 00 95">
+                            <svg class="call__icon icon icon-phone">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                       </svg>8 (800) 555 00 95</a>
+                        <a class="call__btn" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bot">
+                <div class="container">
+                    <a href="index.html" class="logo">
+                        <img class="logo__pic" src="img/logo.png" alt="Market Point">
+                        <span class="logo__text">Система защиты продукции от подделок</span>
+                    </a>
+
+                    <div class="hamburger hamburger_spin js-hamburger">
+                        <div class="hamburger__box">
+                            <div class="hamburger__inner"></div>
+                        </div>
+                    </div>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+                            <li class="menu__item"><a class="menu__link" href="news.html">Новости</a></li>
+                            <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Проверить продукт</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <a class="header-bot__btn" href="#">SOS! Я купил подделку</a>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="protect">
+                <div class="container">
+                    <h2 class="protect__title">Как работает защита подлинности</h2>
+                    <div class="protect__row">
+                        <div class="protect-item wow bounceInLeft">
+                            <div class="protect-item__icon">
+                                <svg class="icon icon-generation">
+                          <use xlink:href="img/sprite.svg#icon-generation"></use>
+                       </svg>
+                            </div>
+                            <span class="protect-item__descr">Генерация базы уникальных кодов</span>
+                        </div>
+                        <div class="protect-item wow bounceInLeft">
+                            <div class="protect-item__icon">
+                                <svg class="icon icon-package">
+                          <use xlink:href="img/sprite.svg#icon-package"></use>
+                       </svg>
+                            </div>
+                            <span class="protect-item__descr">Нанесение кодов на упаковку товара</span>
+                        </div>
+                        <div class="protect-item wow bounceInLeft">
+                            <div class="protect-item__icon">
+                                <svg class="icon icon-check">
+                          <use xlink:href="img/sprite.svg#icon-check"></use>
+                       </svg>
+                            </div>
+                            <span class="protect-item__descr">Проверка кода и подлинности товара</span>
+                        </div>
+                    </div>
+
+                    <div class="protect-check wow bounceInUp">
+                        <h4 class="protect-check__title">Проверь подлинность товара на нашем сайте прямо сейчас (Введите код со стикера)</h4>
+
+                        <form class="protect-check__form" action="#">
+                            <input class="protect-check__field" type="text" name="code" value="" placeholder="Вставить код:">
+                            <input class="protect-check__btn" type="submit" value="Начать проверку">
+                        </form>
+                        <p class="protect-check__descr">Проверьте, что вы ввели именно код со специальной этикетки системы защиты подлинности, а не штрих-код, серийный номер или иные цифры с упаковки товара. Обычно коды системы ORIGINAL содержат 12 цифр и находятся под секретным слоем
+                            или на втором слое двухслойной этикетки (есть исключения).</p>
+                    </div>
+                </div>
+            </section>
+            <section class="order-call">
+                <div class="container">
+                    <h3 class="order-call__title wow fadeInUp">Узнать подробнее о защите товаров от подделок</h3>
+
+                    <form class="order-call__form" action="#">
+                        <input class="order-call__field wow bounceInLeft" name="name" type="text" placeholder="Ваше имя:">
+                        <input class="order-call__field wow bounceInRight" name="tel" type="tel" placeholder="Ваше телефон:">
+                        <input class="btn order-call__btn wow bounceInUp" type="submit" value="Заказать звонок">
+                    </form>
+                </div>
+            </section>
+
+            <section class="system">
+                <div class="container">
+                    <div class="system__text wow bounceInUp" data-wow-offset="30">
+                        <h4 class="system__title">Система защиты от подделок</h4>
+                        <p class="system__descr">Original - это простой сервис проверки подлинности продукции. Для покупателей мы подготовили предельно понятный механизм проверки, удобный SMS-сервис и круглосуточную горячую линию. Для производителей мы предлагаем всестороннюю
+                            проработку проекта от эскиза этикетки до аналитики, включающей базу с таргетированными данными покупателей и информацию о точках продаж контрафакта.</p>
+                    </div>
+
+                    <div class="system-check wow fadeInUp" data-wow-offset="30">
+                        <div class="system-check__text">Покупатель получает результат проверки в формате,соответствующем способу отправки запроса.</div>
+                        <div class="system-check__item system-check__item--one">
+                            <div class="system-check__pic system-check__pic--one"></div>
+                            <div class="system-check__item-text">Если подлинность не подтвердилась</div>
+                        </div>
+                        <div class="system-check__item system-check__item--two">
+                            <div class="system-check__pic system-check__pic--two"></div>
+                            <div class="system-check__item-text">Продукция подлинная</div>
+                        </div>
+                    </div>
+
+                    <div class="system-send wow fadeInUp" data-wow-offset="50">
+                        <div class="system-send__text">Покупатель отправляет запрос о проверке подлинности продукта одним из способов:</div>
+                        <div class="system-send__line"></div>
+
+                        <div class="system-send__item">
+                            <div class="system-send__pic system-send__pic--one"></div>
+                            <div class="system-send__descr">Отправить уникальный код в SMS-сообщении на короткий номер 2420</div>
+                        </div>
+                        <div class="system-send__item">
+                            <div class="system-send__pic system-send__pic--two"></div>
+                            <div class="system-send__descr">Зарегистрировать код на сайте сервиса www.original.su или сайте производителя, куда интегрируется функционал проверки кодов;</div>
+                        </div>
+                        <div class="system-send__item">
+                            <div class="system-send__pic system-send__pic--three"></div>
+                            <div class="system-send__descr">Сканировать код с помощью любого QR-ридера или специального мобильного приложения (для QR-кодов);</div>
+                        </div>
+                        <div class="system-send__item">
+                            <div class="system-send__pic system-send__pic--four"></div>
+                            <div class="system-send__descr">Назвать код оператору службы поддержки, позвонив по телефону бесплатной круглосуточной горячей линии 8 (800) 555-00-95.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="calculate">
+                <div class="container">
+                    <h5 class="calculate__title wow bounceInLeft">Рассчитайте вашу дополнительную выручку при защите подлинности</h5>
+                    <a class="calculate__btn btn wow bounceInRight" href="#">Расчитать стоимость</a>
+                </div>
+            </div>
+
+            <section class="products wow flipInY" data-wow-offset="30">
+                <div class="container">
+                    <div class="products-slider">
+                        <div class="products-slider__item">
+                            <div class="products-slider__pic">
+                                <img class="products-slider__img" src="img/slider_itm.jpg" alt="Googles">
+                            </div>
+                            <div class="products-slider__text">
+                                <h6 class="products-slider__title">Защищенные системой товары</h6>
+                                <div class="products-slider__descr">Очки «Радуга прозрения» аппарат светодиодный офтальмологический (очки Панкова)</div>
+                                <ul class="products-slider__list">
+                                    <li>Авторская технология профессора О.П. Панкова соединённая с новейшими достижениями техники:</li>
+                                    <li>изготовлен по ТУ 9444-001-78551706-2011;</li>
+                                    <li>рекомендован людям, работа которых связана с большой нагрузкой на зрение (педагоги, учащиеся, водители, программисты и т.д.);</li>
+                                    <li>для больниц и домашнего использования;</li>
+                                    <li>для всех возрастов;</li>
+                                    <li>комплексное лечении многих заболеваний глаз: глаукома, катаракта, хроническая усталость глаз и пр.</li>
+                                </ul>
+                                <a class="products-slider__btn btn" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="products-slider__item">
+                            <div class="products-slider__pic">
+                                <img class="products-slider__img" src="img/slider_itm.jpg" alt="Googles">
+                            </div>
+                            <div class="products-slider__text">
+                                <h6 class="products-slider__title">Защищенные системой товары</h6>
+                                <div class="products-slider__descr">Очки «Радуга прозрения» аппарат светодиодный офтальмологический (очки Панкова)</div>
+                                <ul class="products-slider__list">
+                                    <li>Авторская технология профессора О.П. Панкова соединённая с новейшими достижениями техники:</li>
+                                    <li>изготовлен по ТУ 9444-001-78551706-2011;</li>
+                                    <li>рекомендован людям, работа которых связана с большой нагрузкой на зрение (педагоги, учащиеся, водители, программисты и т.д.);</li>
+                                    <li>для больниц и домашнего использования;</li>
+                                    <li>для всех возрастов;</li>
+                                    <li>комплексное лечении многих заболеваний глаз: глаукома, катаракта, хроническая усталость глаз и пр.</li>
+                                </ul>
+                                <a class="products-slider__btn btn" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="products-slider__item">
+                            <div class="products-slider__pic">
+                                <img class="products-slider__img" src="img/slider_itm.jpg" alt="Googles">
+                            </div>
+                            <div class="products-slider__text">
+                                <h6 class="products-slider__title">Защищенные системой товары</h6>
+                                <div class="products-slider__descr">Очки «Радуга прозрения» аппарат светодиодный офтальмологический (очки Панкова)</div>
+                                <ul class="products-slider__list">
+                                    <li>Авторская технология профессора О.П. Панкова соединённая с новейшими достижениями техники:</li>
+                                    <li>изготовлен по ТУ 9444-001-78551706-2011;</li>
+                                    <li>рекомендован людям, работа которых связана с большой нагрузкой на зрение (педагоги, учащиеся, водители, программисты и т.д.);</li>
+                                    <li>для больниц и домашнего использования;</li>
+                                    <li>для всех возрастов;</li>
+                                    <li>комплексное лечении многих заболеваний глаз: глаукома, катаракта, хроническая усталость глаз и пр.</li>
+                                </ul>
+                                <a class="products-slider__btn btn" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="products-slider__item">
+                            <div class="products-slider__pic">
+                                <img class="products-slider__img" src="img/slider_itm.jpg" alt="Googles">
+                            </div>
+                            <div class="products-slider__text">
+                                <h6 class="products-slider__title">Защищенные системой товары</h6>
+                                <div class="products-slider__descr">Очки «Радуга прозрения» аппарат светодиодный офтальмологический (очки Панкова)</div>
+                                <ul class="products-slider__list">
+                                    <li>Авторская технология профессора О.П. Панкова соединённая с новейшими достижениями техники:</li>
+                                    <li>изготовлен по ТУ 9444-001-78551706-2011;</li>
+                                    <li>рекомендован людям, работа которых связана с большой нагрузкой на зрение (педагоги, учащиеся, водители, программисты и т.д.);</li>
+                                    <li>для больниц и домашнего использования;</li>
+                                    <li>для всех возрастов;</li>
+                                    <li>комплексное лечении многих заболеваний глаз: глаукома, катаракта, хроническая усталость глаз и пр.</li>
+                                </ul>
+                                <a class="products-slider__btn btn" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="products-slider__item">
+                            <div class="products-slider__pic">
+                                <img class="products-slider__img" src="img/slider_itm.jpg" alt="Googles">
+                            </div>
+                            <div class="products-slider__text">
+                                <h6 class="products-slider__title">Защищенные системой товары</h6>
+                                <div class="products-slider__descr">Очки «Радуга прозрения» аппарат светодиодный офтальмологический (очки Панкова)</div>
+                                <ul class="products-slider__list">
+                                    <li>Авторская технология профессора О.П. Панкова соединённая с новейшими достижениями техники:</li>
+                                    <li>изготовлен по ТУ 9444-001-78551706-2011;</li>
+                                    <li>рекомендован людям, работа которых связана с большой нагрузкой на зрение (педагоги, учащиеся, водители, программисты и т.д.);</li>
+                                    <li>для больниц и домашнего использования;</li>
+                                    <li>для всех возрастов;</li>
+                                    <li>комплексное лечении многих заболеваний глаз: глаукома, катаракта, хроническая усталость глаз и пр.</li>
+                                </ul>
+                                <a class="products-slider__btn btn" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="protected wow fadeInUp">
+                <div class="container">
+                    <div class="protected__item spincrement">131</div>
+                    <div class="protected__item spincrement">308</div>
+                    <div class="protected__item spincrement">732</div>
+                    <h4 class="protected__title">Товаров защищено от подделок</h4>
+                </div>
+            </section>
+
+            <section class="partners wow tada">
+                <div class="container">
+                    <h5 class="partners__title">Наши клиенты</h5>
+                    <div class="partners__pic">
+                        <img class="partners__img" src="img/partners.jpg" alt="Partners">
+                    </div>
+                    <a class="partners__btn btn" href="#">Смотреть рекомендательные письма</a>
+                </div>
+            </section>
+
+            <section class="order-call">
+                <div class="container">
+                    <h3 class="order-call__title wow fadeInUp">Узнать подробнее о защите товаров от подделок</h3>
+
+                    <form class="order-call__form" action="#">
+                        <input class="order-call__field wow bounceInLeft" type="text" placeholder="Ваше имя:">
+                        <input class="order-call__field wow bounceInRight" type="tel" placeholder="Ваше телефон:">
+                        <input class="btn order-call__btn wow bounceInUp" type="submit" value="Заказать звонок">
+                    </form>
+                </div>
+            </section>
+
+            <section class="patent">
+                <div class="container">
+                    <h5 class="patent__title wow fadeInUp">Система защищена патентом</h5>
+                    <p class="patent__descr">Мы обладаем двумя патентами на технологии, используемые в защите подлинности товаров наших клиентов, а также сертифицированной системой менеджмента качества.</p>
+
+                    <div class="patent__row">
+                        <div class="patent__item wow flipInX">
+                            <div class="patent__pic">
+                                <img class="patent__img" src="img/patent_img.jpg" alt="Patent">
+                            </div>
+                        </div>
+                        <div class="patent__item wow flipInX">
+                            <div class="patent__pic">
+                                <img class="patent__img" src="img/patent_img.jpg" alt="Patent">
+                            </div>
+                        </div>
+                        <div class="patent__item wow flipInX">
+                            <div class="patent__pic">
+                                <img class="patent__img" src="img/patent_img.jpg" alt="Patent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map">
+                <div class="map__inner" id="YMapsID"></div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="address">
+                        <div class="address__str">127322, г. Москва, Огородный проезд, д.20, стр.27</div>
+                        <a class="address__mail" href="mailto:system@original-group.ru"><svg class="address__icon address__icon--footer icon icon-mail">
+                     <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>system@original-group.ru</a>
+                    </div>
+                    <div class="call">
+                        <a class="call__tel" href="tel:8 (800) 555 00 95">
+                            <svg class="call__icon call__icon--footer icon icon-phone">
+                     <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>8 (800) 555 00 95</a>
+                        <a class="call__btn call__btn--footer" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bot">
+                <div class="container">
+                    <span class="copyright">&copy; 2016 Market point</span>
+                    <a class="scroll-top" href="#top">
+                        <svg class="scroll-top__icon icon-arrow-top">
+                  <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+               </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
